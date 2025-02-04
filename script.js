@@ -24,14 +24,14 @@ applyDiscount(prices, discount); // Output: [80, 160, 240, 360]
 // Write a function that uses setTimeout to log "Task completed!" after a 5-second delay.
 // Additionally, set up a setInterval to log "Still waiting..." every 2 seconds.
 
-// function logMessage() {
-//     console.log("Task Completed!")
-// }
+function logMessage() {
+    console.log("Task Completed!")
+}
 
-// setTimeout(logMessage, 5000);
+setTimeout(logMessage, 5000);
 
-// function delayMessage() {
-//     console.log("Still waiting...")
-// }
+function delayMessage() {
+    console.log("Still waiting...")
+}
 
-// setInterval(delayMessage, 2000);
+setInterval(delayMessage, 2000);
