@@ -4,23 +4,19 @@
 // The callback should apply a discount to each price. 
 // After the discount is applied, log the final prices.
 
-// function applyDiscount(prices, callback) {
-//     const discountedPrices = prices.map(price => callback(price));
+const prices = [100, 200, 300, 400];
 
-//     console.log(discountedPrices);
-// }
+function applyDiscount(prices, callback) {
+    const discountedPrices = prices.map(price => callback(price));
+    console.log(discountedPrices);
+}
 
-// function discount(price) {
-//     const discountRate = 0.2;  // Applied a 20 percent discount
-//     return price - (price * discountRate);
-//   }
+function discount(price) {
+    const discountRate = 0.2;
+    return price - (price * discountRate);
+}
 
-//   const prices = [100, 200, 300, 400];
-//   applyDiscount(prices, discount); // logging the final prices with an applied discount
-
-//   // Output: [80, 160, 240, 360]
-
-
+applyDiscount(prices, discount); // Output: [80, 160, 240, 360]
 
 
 // Exercise 5:
